@@ -1,0 +1,23 @@
+任务0：考勤管理系统 - 外发运行包说明
+
+一、最快运行方式
+1. 解压 Project0_Distribution.zip。
+2. 打开解压后的 Project0_Distribution 文件夹。
+3. 双击“运行程序.bat”。
+4. 如果电脑已安装 Python，脚本会自动检测并补齐运行库；没有 Python 时会直接尝试启动静态版 exe。
+
+二、文件说明
+bin\Project0_static.exe  推荐运行的主程序，已尽量静态编译。
+bin\Project0.exe         备用普通版程序。
+runtime.zip                          MinGW 运行库压缩包，auto_run.py 会按需解压。
+bin\data\                          程序实际读取和保存的数据目录。
+auto_run.py                          自动检测环境、解压 DLL、启动程序。
+运行程序.bat                         一键启动入口。
+
+三、适用电脑
+Windows 64 位系统。
+
+四、常见问题
+1. 提示缺少 DLL：请运行“运行程序.bat”或“python auto_run.py”。
+2. 没有数据：确认 bin\data 目录存在；脚本会从外层 data 目录复制初始数据。
+3. 不要删除 bin、runtime.zip、auto_run.py、运行程序.bat。
